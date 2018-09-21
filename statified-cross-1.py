@@ -10,7 +10,7 @@ from sklearn.naive_bayes import MultinomialNB
 import numpy as np
 from sklearn.svm import SVC
 
-tree = ET.parse(join("data", "rest_final.xml"))
+tree = ET.parse(join("data", "rest_final_new.xml"))
 root = tree.getroot()
 
 reviews = root.findall("Review")
@@ -27,18 +27,16 @@ for i in root.iter('sentence'):
 
         opinion = i.find('Opinion')
 
-        if (opinion.attrib['category'] == 'REST#STYLEOPTIONS'):
+        if (opinion.attrib['category'] == 'REST#QUALITY'):
             text = i.find('text')
             datas.append(text.text)
             categories.append(opinion.attrib['category'])
             count += 1
 for i in root.iter('sentence'):
     # print("la: " + str(count_1))
-    if (i.get('OutOfScope') != 'TRUE' and count1 < count+30):
-
+    if (i.get('OutOfScope') != 'TRUE' and count1 < count+300):
         opinion = i.find('Opinion')
-
-        if (opinion.attrib['category'] != 'REST#STYLEOPTIONS'):
+        if (opinion.attrib['category'] != 'REST#QUALITY'):
             text = i.find('text')
             text = text.text
             datas.append(text)

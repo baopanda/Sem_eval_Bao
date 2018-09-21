@@ -44,13 +44,8 @@ X_train, X_valid, y_train, y_valid = train_test_split(datas, categories, test_si
 print(y_valid)
 vectorizer = CountVectorizer()
 transformed_x_train = vectorizer.fit_transform(X_train)
-# trainVocab = vectorizer.vocabulary_
-# print(trainVocab)
-# print(len(trainVocab))
-# vectorizer = CountVectorizer(vocabulary=trainVocab)
 tfidf_transformer = TfidfTransformer()
 X_train_tfidf = tfidf_transformer.fit_transform(transformed_x_train)
-# transformed_x_valid = vectorizer.fit_transform(X_valid).toarray()
 text_clf = Pipeline([('vect', CountVectorizer()),
                       ('tfidf', TfidfTransformer()),
                       ('clf', MultinomialNB()),])
@@ -58,7 +53,6 @@ text_clf = Pipeline([('vect', CountVectorizer()),
 text_clf = text_clf.fit(X_train, y_train)
 predicted = text_clf.predict(X_valid)
 print(np.mean(predicted == y_valid))
-
 text_clf_svm = Pipeline([('vect', CountVectorizer()),
                       ('tfidf', TfidfTransformer()),
                       ('clf-svm', SGDClassifier(loss='hinge', penalty='l2',
