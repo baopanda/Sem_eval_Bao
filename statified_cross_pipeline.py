@@ -22,7 +22,7 @@ categories = []
 # sentences = root.findall("**/sentence")
 # print("# Reviews   : ", len(reviews))
 # print("# Sentences : ", len(sentences))
-#
+
 # count = 0
 # count1 = 0
 # for i in root.iter('sentence'):
@@ -31,18 +31,18 @@ categories = []
 #
 #         opinion = i.find('Opinion')
 #
-#         if (opinion.attrib['category'] == 'REST#LOCATION'):
+#         if (opinion.attrib['category'] == 'REST#QUALITY'):
 #             text = i.find('text')
 #             datas.append(text.text)
 #             categories.append(opinion.attrib['category'])
 #             count += 1
 # for i in root.iter('sentence'):
 #     # print("la: " + str(count_1))
-#     if (i.get('OutOfScope') != 'TRUE' and count1 < count+40):
+#     if (i.get('OutOfScope') != 'TRUE' and count1 < count+300):
 #
 #         opinion = i.find('Opinion')
 #
-#         if (opinion.attrib['category'] != 'REST#LOCATION'):
+#         if (opinion.attrib['category'] != 'REST#QUALITY'):
 #             text = i.find('text')
 #             text = text.text
 #             datas.append(text)
@@ -68,33 +68,26 @@ for train_index, test_index in skf:
     # print("TRAIN:", train_index, "TEST:", test_index)
     X_train, X_valid = data[train_index], data[test_index]
     y_train, y_valid = label[train_index], label[test_index]
-    vectorizer = CountVectorizer()
-    transformed_x_train = vectorizer.fit_transform(X_train)
-    # print(transformed_x_train.shape)
-    tfidf_transformer = TfidfTransformer()
-    X_train_tfidf = tfidf_transformer.fit_transform(transformed_x_train)
-    # print(X_train_tfidf.shape)
 
-    text_clf = Pipeline([('tfidf', TfidfTransformer()),
+    text_clf = Pipeline([('vect', CountVectorizer()),
+                         ('tfidf', TfidfTransformer()),
                          ('clf', MultinomialNB()), ])
 
-    text_clf_svm = Pipeline([('tfidf', TfidfTransformer()),
-                             ('clf-svm', SVC(kernel = 'linear')) ])
+    text_clf = text_clf.fit(X_train, y_train)
+    predicted = text_clf.predict(X_valid)
+    print(np.mean(predicted == y_valid))
+    text_clf_svm = Pipeline([('vect', CountVectorizer()),
+                             ('tfidf', TfidfTransformer()),
+                             ('clf', SVC(kernel = 'linear')), ])
 
-    text_clf_svm.fit(transformed_x_train, y_train)
-
-    X_valid_transform = vectorizer.transform(X_valid)
-    X_valid_tfidf = tfidf_transformer.transform(X_valid_transform)
-    y_pred = text_clf_svm.predict(X_valid_tfidf)
+    text_clf_svm = text_clf_svm.fit(X_train, y_train)
+    predicted_SVM = text_clf_svm.predict(X_valid)
+    # print(np.mean(predicted_SVM == y_valid))
     print('Training size = %d, accuracy = %.2f%%' % \
-          (len(X_train), accuracy_score(y_valid, y_pred) * 100))
+          (len(X_train), accuracy_score(y_valid,  predicted_SVM ) * 100))
     # print(classification_report(y_valid, y_pred))
-    print(confusion_matrix(y_valid, y_pred))
-    cv_scores.append(accuracy_score(y_valid, y_pred))
-    # print(cv_scores)
+    print(confusion_matrix(y_valid, predicted_SVM ))
+    cv_scores.append(accuracy_score(y_valid,  predicted_SVM ))
 
 print("CV scores: ", cv_scores)
 print("mean: : {}".format(np.mean(cv_scores)))
-
-
-
