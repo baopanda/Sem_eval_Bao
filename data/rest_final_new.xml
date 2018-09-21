@@ -6257,7 +6257,7 @@
 			</sentence>
 			<sentence id="HoaQuaDamHoaBeoToTich19:3">
 				<text>Một bát các loại hoa_quả : thanh_long , xoài , dưa_hấu , táo , mít , đu_đủ , lê ... với chút nước_cốt dừa thơm thơm là quá thoả_mãn cho những bữa thèm ngọt .</text>
-				<Opinion category="REST#QUALITY" polarity="positive"/
+				<Opinion category="REST#QUALITY" polarity="positive"/>
 				<Opinion category="REST#STYLEOPTIONS"/>>
 			</sentence>
 			<sentence id="HoaQuaDamHoaBeoToTich19:4">
@@ -9469,7 +9469,7 @@
 			<sentence id="PapaSteak12:0">
 				<text>Đã ăn_ở đây quá nhiều lần rồi đến_nỗi ko nhớ hết được , up tạm chừng này hình : ) ) ) ) Thức_ăn ngon , giá ổn .</text>
 				<Opinion category="REST#QUALITY" polarity="positive"/>
-				<Opinion category="REST#PRICES "/>
+				<Opinion category="REST#PRICES"/>
 			</sentence>
 			<sentence id="PapaSteak12:1">
 				<text>Thịt bò mềm , sốt chấm bánh_mì đi kèm rất ngon .</text>
