@@ -69,13 +69,13 @@ for train_index, test_index in skf:
     X_train, X_valid = data[train_index], data[test_index]
     y_train, y_valid = label[train_index], label[test_index]
 
-    text_clf = Pipeline([('vect', CountVectorizer()),
-                         ('tfidf', TfidfTransformer()),
-                         ('clf', MultinomialNB()), ])
-
-    text_clf = text_clf.fit(X_train, y_train)
-    predicted = text_clf.predict(X_valid)
-    print(np.mean(predicted == y_valid))
+    # text_clf = Pipeline([('vect', CountVectorizer()),
+    #                      ('tfidf', TfidfTransformer()),
+    #                      ('clf', MultinomialNB()), ])
+    #
+    # text_clf = text_clf.fit(X_train, y_train)
+    # predicted = text_clf.predict(X_valid)
+    # print(np.mean(predicted == y_valid))
     text_clf_svm = Pipeline([('vect', CountVectorizer()),
                              ('tfidf', TfidfTransformer()),
                              ('clf', SVC(kernel = 'linear')), ])
