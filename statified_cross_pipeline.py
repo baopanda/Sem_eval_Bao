@@ -49,11 +49,11 @@ categories = []
 #             categories.append('None')
 #             count1 +=1
 
-with open(join("data_new", "datas_QUALITY.txt"),'r', encoding='utf-8')as file:
+with open(join("data_train", "datas_QUALITY.txt"),'r', encoding='utf-8')as file:
     for i in file:
         datas.append(i)
 
-with open(join("data_new", "labels_QUALITY.txt"),'r', encoding='utf-8')as file:
+with open(join("data_train", "labels_QUALITY.txt"),'r', encoding='utf-8')as file:
     for i in file:
         categories.append(i)
 

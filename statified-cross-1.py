@@ -10,38 +10,48 @@ from sklearn.naive_bayes import MultinomialNB
 import numpy as np
 from sklearn.svm import SVC
 
-tree = ET.parse(join("data", "rest_final_new.xml"))
-root = tree.getroot()
-
-reviews = root.findall("Review")
-sentences = root.findall("**/sentence")
-print("# Reviews   : ", len(reviews))
-print("# Sentences : ", len(sentences))
 datas = []
 categories = []
-count = 0
-count1 = 0
-for i in root.iter('sentence'):
-    # print("la: " + str(count_1))
-    if (i.get('OutOfScope') != 'TRUE'):
 
-        opinion = i.find('Opinion')
+# tree = ET.parse(join("data", "rest_final_new.xml"))
+# root = tree.getroot()
+#
+# reviews = root.findall("Review")
+# sentences = root.findall("**/sentence")
+# print("# Reviews   : ", len(reviews))
+# print("# Sentences : ", len(sentences))
 
-        if (opinion.attrib['category'] == 'REST#QUALITY'):
-            text = i.find('text')
-            datas.append(text.text)
-            categories.append(opinion.attrib['category'])
-            count += 1
-for i in root.iter('sentence'):
-    # print("la: " + str(count_1))
-    if (i.get('OutOfScope') != 'TRUE' and count1 < count+300):
-        opinion = i.find('Opinion')
-        if (opinion.attrib['category'] != 'REST#QUALITY'):
-            text = i.find('text')
-            text = text.text
-            datas.append(text)
-            categories.append('None')
-            count1 +=1
+# count = 0
+# count1 = 0
+# for i in root.iter('sentence'):
+#     # print("la: " + str(count_1))
+#     if (i.get('OutOfScope') != 'TRUE'):
+#
+#         opinion = i.find('Opinion')
+#
+#         if (opinion.attrib['category'] == 'REST#QUALITY'):
+#             text = i.find('text')
+#             datas.append(text.text)
+#             categories.append(opinion.attrib['category'])
+#             count += 1
+# for i in root.iter('sentence'):
+#     # print("la: " + str(count_1))
+#     if (i.get('OutOfScope') != 'TRUE' and count1 < count+300):
+#         opinion = i.find('Opinion')
+#         if (opinion.attrib['category'] != 'REST#QUALITY'):
+#             text = i.find('text')
+#             text = text.text
+#             datas.append(text)
+#             categories.append('None')
+#             count1 +=1
+
+with open(join("data_train", "datas_QUALITY.txt"),'r', encoding='utf-8')as file:
+    for i in file:
+        datas.append(i)
+
+with open(join("data_train", "labels_QUALITY.txt"),'r', encoding='utf-8')as file:
+    for i in file:
+        categories.append(i)
 
 df = pd.DataFrame({"datas": datas, "categories": categories})
 data = df['datas']
