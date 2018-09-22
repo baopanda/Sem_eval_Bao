@@ -21,18 +21,18 @@ for i in root.iter('sentence'):
 
         opinion = i.find('Opinion')
 
-        if (opinion.attrib['category'] == 'REST#QUALITY'):
+        if (opinion.attrib['category'] == 'REST#STYLEOPTIONS'):
             text = i.find('text')
             datas.append(text.text)
             categories.append(opinion.attrib['category'])
             count += 1
 for i in root.iter('sentence'):
     # print("la: " + str(count_1))
-    if (i.get('OutOfScope') != 'TRUE' and count1 < count+300):
+    if (i.get('OutOfScope') != 'TRUE' and count1 < count+100):
 
         opinion = i.find('Opinion')
 
-        if (opinion.attrib['category'] != 'REST#QUALITY'):
+        if (opinion.attrib['category'] != 'REST#STYLEOPTIONS'):
             text = i.find('text')
             text = text.text
             datas.append(text)
@@ -40,7 +40,7 @@ for i in root.iter('sentence'):
             count1 +=1
 
 SPECIAL_CHARACTER = '%@$=+-!;🏻/()👍*❤"😍&^:♥<>#|\n\t\''
-with open(join("data_new", "datas_QUALITY.txt"),'w',encoding='utf-8') as file:
+with open(join("data_train", "datas_STYLEOPTIONS.txt"),'w',encoding='utf-8') as file:
     for i in datas:
         my_words = i.split(" ")
         for word1 in i:
@@ -52,15 +52,15 @@ with open(join("data_new", "datas_QUALITY.txt"),'w',encoding='utf-8') as file:
                 i = i.replace(word, "")
                 i = i.replace("  ", " ")
         i = ViTokenizer.tokenize(i)
-        my_words = i.split(" ")
-        for word in my_words:
-            if word in StopWords.STOP_WORDS:
-                i = i.replace(word, "")
-                i = i.replace("  ", " ")
+        # my_words = i.split(" ")
+        # for word in my_words:
+        #     if word in StopWords.STOP_WORDS:
+        #         i = i.replace(word, "")
+        #         i = i.replace("  ", " ")
         i = i.lower()
         file.write(i+"\n")
 
-with open(join("data_new", "labels_QUALITY.txt"),'w',encoding='utf-8') as file:
+with open(join("data_train", "labels_STYLEOPTIONS.txt"),'w',encoding='utf-8') as file:
     for i in categories:
         file.write(str(i)+"\n")
 
