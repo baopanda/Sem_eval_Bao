@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.svm import SVC
 
-tree = ET.parse(join("data", "rest_final.xml"))
+tree = ET.parse(join("data", "rest_final_new.xml"))
 root = tree.getroot()
 
 reviews = root.findall("Review")
@@ -48,10 +48,10 @@ df = pd.DataFrame({"datas": datas, "categories": categories})
 X_train, X_valid, y_train, y_valid = train_test_split(datas, categories, test_size=0.2, random_state=50)
 print(y_valid)
 vectorizer = CountVectorizer()
-transformed_x_train = vectorizer.fit_transform(X_train).toarray()
+transformed_x_train = vectorizer.fit_transform(X_train)
 trainVocab = vectorizer.vocabulary_
 vectorizer = CountVectorizer(vocabulary=trainVocab)
-transformed_x_valid = vectorizer.fit_transform(X_valid).toarray()
+transformed_x_valid = vectorizer.fit_transform(X_valid)
 
 best_clf = MultinomialNB()
 best_clf.fit(transformed_x_train, y_train)
