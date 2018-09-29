@@ -17,9 +17,7 @@ ba_họ
 ba_ngày
 ba_ngôi
 ba_tăng
-bao_giờ
 bao_lâu
-bao_nhiêu
 bao_nả
 bay_biến
 biết

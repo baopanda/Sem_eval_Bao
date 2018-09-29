@@ -1,8 +1,11 @@
 import pickle
 from os.path import join
 
+from pyvi import ViTokenizer
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics import confusion_matrix
+
+from Sem_eval_Bao import PreProcessing_valid
 
 
 def LoadData(path_data,path_label):
@@ -18,7 +21,9 @@ def LoadData(path_data,path_label):
     return datas, labels
 
 def Classification():
-    s = "Kim_chi gọi thêm 10k/bát khá đầy_đặn , ăn giòn vừa cay vừa ."
+    s = "Đồ ăn tại quán ăn rất là ngon nhé! "
+    s = PreProcessing_valid.PreProcessing(s)
+    print(s)
     pre = []
     pre.append(s)
     datas_valid = []
