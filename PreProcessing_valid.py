@@ -1,5 +1,7 @@
 from pyvi import ViTokenizer
 
+from Sem_eval_Bao import StopWord1
+
 
 def PreProcessing(i):
     SPECIAL_CHARACTER = '%@$=+-!;🏻/()👍*❤"😍&^:♥<>#|\n\t\''
@@ -13,5 +15,10 @@ def PreProcessing(i):
             i = i.replace(word, "")
             i = i.replace("  ", " ")
     i = ViTokenizer.tokenize(i)
+    my_words = i.split(" ")
+    for word in my_words:
+        if word in StopWord1.STOP_WORDS:
+            i = i.replace(word, "")
+            i = i.replace("  ", " ")
     i = i.lower()
     return i

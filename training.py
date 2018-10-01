@@ -17,7 +17,7 @@ from sklearn_crfsuite import estimator
 
 
 def SaveModel(clf):
-    filename = 'STYLEOPTIONS.pkl'
+    filename = 'LOCATION_new.pkl'
     saved_model = open(join("models",filename), 'wb')
     pickle.dump(clf, saved_model)
     saved_model.close()
@@ -27,11 +27,11 @@ categories = []
 datas_valid = []
 categories_valid = []
 
-with open(join("data_train", "datas_STYLEOPTIONS.txt"),'r', encoding='utf-8')as file:
+with open(join("data_train", "datas_LOCATION_new.txt"),'r', encoding='utf-8')as file:
     for i in file:
         datas.append(i)
 
-with open(join("data_train", "labels_STYLEOPTIONS.txt"),'r', encoding='utf-8')as file:
+with open(join("data_train", "labels_LOCATION_new.txt"),'r', encoding='utf-8')as file:
     for i in file:
         categories.append(i)
 
