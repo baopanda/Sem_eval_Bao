@@ -2,7 +2,7 @@ import pandas as pd
 from os.path import join
 from lxml import etree as ET
 from pyvi import ViTokenizer
-from Sem_eval_Bao import StopWord1
+
 
 tree = ET.parse(join("data", "rest_final_new.xml"))
 root = tree.getroot()

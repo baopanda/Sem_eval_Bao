@@ -4,7 +4,21 @@
     <bookmark url="file://$PROJECT_DIR$/statified-cross-1.py" line="29" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e53c9442-bb0c-4444-840e-c26bdd32b406" name="Default Changelist" comment="" />
+    <list default="true" id="e53c9442-bb0c-4444-840e-c26bdd32b406" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/semeval-2016-task-5-eda.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/semeval-2016-task-5-eda.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loadmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/loadmodel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/AMBIENCE_new.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/GENERAL_new.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/LOCATION_new.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/PRICES_new.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/QUALITY_new.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/SERVICE_new.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/STYLEOPTIONS_new.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/statified_cross_tf-idf.py" beforeDir="false" afterPath="$PROJECT_DIR$/statified_cross_tf-idf.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,30 +75,28 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-223823435">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PreProcessing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/rest_final.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272060">
-              <caret line="13603" column="9" selection-start-line="13603" selection-start-column="9" selection-end-line="13603" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Stratified-cross-validation.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -100,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/statified-cross-1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="540">
               <caret line="37" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -122,6 +134,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_all_models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/loadmodel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/images/2.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
@@ -135,7 +165,7 @@
         <entry file="file://$PROJECT_DIR$/NaiveBayes.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="440">
-              <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -148,7 +178,7 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/images/image.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
@@ -195,6 +225,9 @@
       <find>S</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -228,6 +261,7 @@
         <option value="$PROJECT_DIR$/NaiveBayes.py" />
         <option value="$PROJECT_DIR$/Stratified-cross-validation.py" />
         <option value="$PROJECT_DIR$/statified-cross-1.py" />
+        <option value="$PROJECT_DIR$/test_all_models.py" />
       </list>
     </option>
   </component>
@@ -246,22 +280,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="semeval-2016-task-5-eda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="semeval-2016-task-5-eda" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="semeval-2016-task-5-eda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="semeval-2016-task-5-eda" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="semeval-2016-task-5-eda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="semeval-2016-task-5-eda" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="semeval-2016-task-5-eda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Sem_eval_Bao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sem_eval_Bao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -293,7 +313,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.statified-cross-1">
+  <component name="RunManager" selected="Python.test_all_models">
     <configuration name="NB-cross" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="semeval-2016-task-5-eda" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -328,27 +348,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NaiveBayes.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="PreProcessing" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="semeval-2016-task-5-eda" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PreProcessing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -420,21 +419,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test_all_models" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="semeval-2016-task-5-eda" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_all_models.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.test 2 (1)" />
       <item itemvalue="Python.NaiveBayes" />
-      <item itemvalue="Python.PreProcessing" />
       <item itemvalue="Python.Stratified-cross-validation" />
       <item itemvalue="Python.statified-cross-1" />
       <item itemvalue="Python.NB-cross" />
+      <item itemvalue="Python.test_all_models" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_all_models" />
         <item itemvalue="Python.statified-cross-1" />
         <item itemvalue="Python.NB-cross" />
         <item itemvalue="Python.Stratified-cross-validation" />
         <item itemvalue="Python.NaiveBayes" />
-        <item itemvalue="Python.PreProcessing" />
       </list>
     </recent_temporary>
   </component>
@@ -453,18 +473,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15191898" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15351813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4067245" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4067245" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
@@ -511,20 +532,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gannhan/SasinMiCay7CapDoHanQuoc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="557" column="23" selection-start-line="557" selection-start-column="23" selection-end-line="557" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gannhan/BanhXeoBaDuong.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="324" column="23" lean-forward="true" selection-start-line="324" selection-start-column="23" selection-end-line="324" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gannhan/BrapAnVatSaDoa.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -572,13 +579,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../crawl-bao/kenh14/ghepfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../crawl-bao/kenh14/ghepfile.py" />
     <entry file="file://$PROJECT_DIR$/gannhan/BellaPizza.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
@@ -628,23 +629,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../tuhocmachinelearning.github.io-master/tuhocmachinelearning.github.io-master/code/text-classifcation/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="175" column="21" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Vietnamese-Text-Classification-master/Vietnamese-Text-Classification-master/settings.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Vietnamese-Text-Classification-master/Vietnamese-Text-Classification-master/predict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../tuhocmachinelearning.github.io-master/tuhocmachinelearning.github.io-master/code/text-classifcation/main.py" />
+    <entry file="file://$PROJECT_DIR$/../../Vietnamese-Text-Classification-master/Vietnamese-Text-Classification-master/settings.py" />
+    <entry file="file://$PROJECT_DIR$/../../Vietnamese-Text-Classification-master/Vietnamese-Text-Classification-master/predict.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/sklearn/naive_bayes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
@@ -659,14 +646,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../crawl-bao/CrawlReviewFoody/testSplash/spiders/splashSpider.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../crawl-bao/foody/foody/spiders/foody_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3006" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../../crawl-bao/CrawlReviewFoody/testSplash/spiders/splashSpider.py" />
+    <entry file="file://$PROJECT_DIR$/../../crawl-bao/foody/foody/spiders/foody_spider.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/seaborn/categorical.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
@@ -674,13 +655,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datas.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="115" selection-start-column="115" selection-end-column="115" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/datas.txt" />
     <entry file="file://$PROJECT_DIR$/eda.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="754">
@@ -695,13 +670,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Segment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Segment.py" />
     <entry file="file://$PROJECT_DIR$/LoadData.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40440">
@@ -709,11 +678,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/labels_ambience.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38410" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/labels_ambience.txt" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/sklearn/feature_extraction/text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -753,11 +718,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/datas_stopword.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38424" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/datas_stopword.txt" />
     <entry file="file://$PROJECT_DIR$/statified_cross_1.py" />
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -769,7 +730,7 @@
     <entry file="file://$PROJECT_DIR$/PreProcessing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -779,7 +740,7 @@
     <entry file="file://$PROJECT_DIR$/data/rest_final.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272060">
-          <caret line="13603" column="9" selection-start-line="13603" selection-start-column="9" selection-end-line="13603" selection-end-column="9" />
+          <caret line="13603" column="8" selection-start-line="13603" selection-start-column="8" selection-end-line="13603" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -787,6 +748,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statified-cross-1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -803,10 +774,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/NaiveBayes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -816,24 +793,22 @@
     <entry file="file://$PROJECT_DIR$/images/image_rest_final.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/statified-cross-1.py">
+    <entry file="file://$PROJECT_DIR$/images/image.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_all_models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="140">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/image.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/loadmodel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

@@ -6,7 +6,7 @@ from sklearn.cross_validation import StratifiedKFold
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.linear_model import SGDClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
-from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import cross_val_score, GridSearchCV
 from sklearn.naive_bayes import MultinomialNB
 import numpy as np
 from sklearn.pipeline import Pipeline
@@ -49,11 +49,11 @@ categories = []
 #             categories.append('None')
 #             count1 +=1
 
-with open(join("data_new", "datas_QUALITY.txt"),'r', encoding='utf-8')as file:
+with open(join("data_train", "datas_QUALITY_new.txt"),'r', encoding='utf-8')as file:
     for i in file:
         datas.append(i)
 
-with open(join("data_new", "labels_QUALITY.txt"),'r', encoding='utf-8')as file:
+with open(join("data_train", "labels_QUALITY_new.txt"),'r', encoding='utf-8')as file:
     for i in file:
         categories.append(i)
 
@@ -75,17 +75,23 @@ for train_index, test_index in skf:
     X_train_tfidf = tfidf_transformer.fit_transform(transformed_x_train)
     # print(X_train_tfidf.shape)
 
-    text_clf = Pipeline([('tfidf', TfidfTransformer()),
-                         ('clf', MultinomialNB()), ])
+    # text_clf = Pipeline([('tfidf', TfidfTransformer()),
+    #                      ('clf', MultinomialNB()), ])
 
-    text_clf_svm = Pipeline([('tfidf', TfidfTransformer()),
-                             ('clf-svm', SVC(kernel = 'linear')) ])
+    text_clf_svm = Pipeline([('vect', CountVectorizer()),
+                         ('tfidf', TfidfTransformer()),
+                         ('clf', SVC(kernel = 'linear',random_state= 42)), ])
 
-    text_clf_svm.fit(transformed_x_train, y_train)
+    param_grid = {
+        "clf__C": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
+        "clf__gamma": np.linspace(0.1, 1, 4),
+    }
 
-    X_valid_transform = vectorizer.transform(X_valid)
-    X_valid_tfidf = tfidf_transformer.transform(X_valid_transform)
-    y_pred = text_clf_svm.predict(X_valid_tfidf)
+    # text_clf_svm = GridSearchCV(text_clf_svm, param_grid=param_grid, cv=5)
+    text_clf_svm = text_clf_svm.fit(X_train, y_train)
+
+    text_clf_svm = text_clf_svm.fit(X_train, y_train)
+    y_pred= text_clf_svm.predict(X_valid)
     print('Training size = %d, accuracy = %.2f%%' % \
           (len(X_train), accuracy_score(y_valid, y_pred) * 100))
     # print(classification_report(y_valid, y_pred))

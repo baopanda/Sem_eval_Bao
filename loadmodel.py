@@ -21,7 +21,8 @@ def LoadData(path_data,path_label):
     return datas, labels
 
 def Classification():
-    s = "Đồ ăn tại quán ăn rất là đầy đặn,đậm đà,ngon, không gian quán đẹp"
+    # s = "Đồ ăn tại quán ăn rất là đầy đặn,đậm đà,ngon, không gian quán đẹp"
+    s= "Mình thấy suất XL ở đây to hơn, ngon hơn và rất đẹp"
     s = PreProcessing_valid.PreProcessing(s)
     print(s)
     pre = []
@@ -30,7 +31,7 @@ def Classification():
     labels_valid = []
     # vectorizer = CountVectorizer()
     # transformed_x_valid = vectorizer.fit_transform(s).toarray()
-    load_file = open(join("models","STYLEOPTIONS_new.pkl"),'rb')
+    load_file = open(join("models_new","STYLEOPTIONS_new.pkl"),'rb')
     clf = pickle.load(load_file)
     print("Loading file : ",clf)
 
